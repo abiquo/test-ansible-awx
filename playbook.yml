@@ -3,5 +3,4 @@
   tasks:
     - ping:
     - debug: 
-      var: ansible_word
-
+        msg: The word is {{ ansible_word }}
