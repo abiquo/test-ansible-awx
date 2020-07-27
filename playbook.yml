@@ -6,4 +6,4 @@
         msg: The word is {{ ansible_word }}
     - set_stats:
         data:
-          ansible_word_2: {{ ansible_word }}
+          ansible_word_2: "{{ ansible_word }}"
