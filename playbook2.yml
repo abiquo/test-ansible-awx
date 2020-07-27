@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - ping:
+    - debug: 
+        msg: The word is {{ ansible_word_2 }}
