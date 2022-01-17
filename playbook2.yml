@@ -1,7 +1,7 @@
 ---
-- hosts: all
+- hosts: localhost
+  connection: local
   tasks:
-    - ping:
     - debug: 
         msg: The word is {{ ansible_word_2 }}
     - set_stats:
