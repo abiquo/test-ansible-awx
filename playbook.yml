@@ -4,6 +4,12 @@
   tasks:
     - debug: 
         msg: The word is {{ ansible_word }}
+
+    - name: make job fail
+      fail:
+        msg: You write the word "fail" so the job will fail
+      when: ansible_word == "fail"
+
     - set_stats:
         data:
           ansible_word_2: "{{ ansible_word }}"
